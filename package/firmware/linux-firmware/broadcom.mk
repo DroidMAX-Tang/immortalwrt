@@ -77,6 +77,9 @@ define Package/brcmfmac-nvram-43430-sdio/install
 	$(LN) \
 		brcmfmac43430-sdio.AP6212.txt \
 		$(1)/lib/firmware/brcm/brcmfmac43430-sdio.beagle,beaglev-starlight-jh7100-r0.txt
+	$(LN) \
+		brcmfmac43430-sdio.AP6212.txt \
+		$(1)/lib/firmware/brcm/brcmfmac43430-sdio.lckfb,tspi-v10.txt
 	$(INSTALL_DATA) \
 		$(PKG_BUILD_DIR)/brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt \
 		$(1)/lib/firmware/brcm/
