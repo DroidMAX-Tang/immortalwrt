@@ -227,7 +227,7 @@ define Device/lckfb_tspi
   UBOOT_DEVICE_NAME := lckfb-tspi-rk3566
   BOOT_FLOW := pine64-img
   DEVICE_PACKAGES := kmod-brcmfmac \
-	brcmfmac-firmware-43430a0-sdio brcmfmac-nvram-43430a0-sdio wpad-basic-openssl
+	brcmfmac-firmware-43430a0-sdio brcmfmac-nvram-43430a0-sdio brcmfmac-nvram-43430-sdio wpad-basic-openssl
 endef
 TARGET_DEVICES += lckfb_tspi
 
