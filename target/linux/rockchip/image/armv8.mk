@@ -219,6 +219,18 @@ define Device/radxa_cm3-io
 endef
 TARGET_DEVICES += radxa_cm3-io
 
+define Device/lckfb_tspi
+  DEVICE_VENDOR := Lckfb
+  DEVICE_MODEL := tspi
+  SOC := rk3568
+  DEVICE_DTS := rockchip/rk3566-lckfb-tspi
+  UBOOT_DEVICE_NAME := lckfb-tspi-rk3566
+  BOOT_FLOW := pine64-img
+  DEVICE_PACKAGES := kmod-brcmfmac \
+	brcmfmac-firmware-43430a0-sdio brcmfmac-nvram-43430a0-sdio wpad-basic-openssl
+endef
+TARGET_DEVICES += lckfb_tspi
+
 define Device/radxa_e25
   DEVICE_VENDOR := Radxa
   DEVICE_MODEL := E25
