@@ -158,6 +158,13 @@ define U-Boot/radxa-cm3-io-rk3566
     radxa_cm3-io
 endef
 
+define U-Boot/lckfb-tspi-rk3566
+  $(U-Boot/Default/rk3566)
+  NAME:=tspi
+  BUILD_DEVICES:= \
+    lckfb_tspi
+endef
+
 
 # RK3568 boards
 
@@ -309,6 +316,7 @@ UBOOT_TARGETS := \
   rock-pi-e-rk3328 \
   rock64-rk3328 \
   radxa-cm3-io-rk3566 \
+  lckfb-tspi-rk3566 \
   fastrhino-r66s-rk3568 \
   fastrhino-r68s-rk3568 \
   mrkaio-m68s-rk3568 \
